@@ -1,0 +1,45 @@
+// Excercise 1 Max of two numbers
+const maxOfTwoNumbers = (x, y) => {
+    if (x >= y) {
+      return x;
+    } else {
+      return y;
+    }
+  }
+    console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 9));
+
+// Excercise 2: isAdult()
+const isAdult = (age) => {
+    if(age >= 18){
+        return 'Adult'
+    } else {
+        return 'Minor'
+    }
+}
+console.log('Excercise 2 result:', isAdult(21))
+
+// Excercise 3 isCharAVowel()
+const isCharAVowel = (character) => {
+    if(character==='a'||character==='e'||character==='i'||character==='o'||character==='u'){
+        return true
+    }  else {
+        return false
+    }
+}
+console.log('Excercise 3 result', isCharAVowel('a'))
+
+// Excercise 4: generateEmail()
+const generateEmail =(userName,domain) => {
+    let firstHalf = userName
+    let secondHalf = domain
+    return `${firstHalf}@${secondHalf}`
+}
+console.log('Excercise 4 result:', generateEmail('johnsmith','example.com'))
+
+// Excercise 5 greetUser()
+const greetUser = (userName,timeOfDay) => {
+    let inputName = userName
+    let whatTimeIsIt = timeOfDay
+    return `Good ${timeOfDay}, ${inputName}!`
+}
+console.log('Excercise 5 result:', greetUser('Sam','morning'))
