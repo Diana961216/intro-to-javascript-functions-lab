@@ -73,3 +73,17 @@ const convertTemperature = (temperature, scale) => {
     }
 }
 console.log('Excercise 8 result:', convertTemperature(32,'C'))
+
+// Excercise 9 basicCalculator()
+const basicCalculator = (num1,num2,operation) =>{
+    if (operation ==='add'){
+        return num1 + num2
+    } else if (operation === 'subtract'){
+        return num1 - num2
+    } else if (operation === 'multiply') {
+        return num1 * num2
+    } else if (operation === 'divide') {
+        return num1 / num2
+    }
+}
+console.log('Excercise 9 result:', basicCalculator(10,5,'subtract'))
