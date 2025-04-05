@@ -43,3 +43,33 @@ const greetUser = (userName,timeOfDay) => {
     return `Good ${timeOfDay}, ${inputName}!`
 }
 console.log('Excercise 5 result:', greetUser('Sam','morning'))
+
+// Excercise 6 maxOfThree()
+const maxOfThree = (x,y,z) => {
+    if( x>=y && x>=z) {
+        return x
+    } else if (y>=z && y>=x){
+        return y
+    } else if (z>=x && z>=y){
+        return z
+    }
+}
+console.log('Excercise 6 result:',maxOfThree(5,10,8))
+
+// Excercise 7 calculateTip()
+const calculateTip = (billAmount, tipPercentage) => {
+    let wholeBill = billAmount
+    let myTip = wholeBill * (tipPercentage/100)
+    return myTip
+}
+console.log('Excercise 7 result:', calculateTip(50,20))
+
+// Excercise 8 convertTemperature
+const convertTemperature = (temperature, scale) => {
+    if (scale === 'C'){
+        return temperature * (9/5) + 32     
+    } else if (scale ==='F') {
+        return (temperature - 32) * (5/9)
+    }
+}
+console.log('Excercise 8 result:', convertTemperature(32,'C'))
