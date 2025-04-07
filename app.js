@@ -103,3 +103,19 @@ const calculateGrade = (myGrade) => {
     }
 }
 console.log('Exercise 10 Result:',calculateGrade(100))
+
+// Exercise 11
+const createUsername = (firstName, lastName) => {
+    const firstPart = firstName.slice(0, 3)
+    const lastPart = lastName.slice(0, 3)
+    const totalLength = firstName.length + lastName.length
+    return firstPart + lastPart + totalLength
+}
+console.log('Exercise 11 result:',createUsername('Samantha', 'Green'))
+
+//Exercise 12
+const numArgs = (...args) => {
+    return args.length;
+}
+
+console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4))
