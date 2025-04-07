@@ -1,4 +1,4 @@
-// Excercise 1 Max of two numbers
+// Exercise 1 Max of two numbers
 const maxOfTwoNumbers = (x, y) => {
     if (x >= y) {
       return x;
@@ -8,7 +8,7 @@ const maxOfTwoNumbers = (x, y) => {
   }
     console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 9));
 
-// Excercise 2: isAdult()
+// Exercise 2: isAdult()
 const isAdult = (age) => {
     if(age >= 18){
         return 'Adult'
@@ -16,9 +16,9 @@ const isAdult = (age) => {
         return 'Minor'
     }
 }
-console.log('Excercise 2 result:', isAdult(21))
+console.log('Exercise 2 result:', isAdult(21))
 
-// Excercise 3 isCharAVowel()
+// Exercise 3 isCharAVowel()
 const isCharAVowel = (character) => {
     if(character==='a'||character==='e'||character==='i'||character==='o'||character==='u'){
         return true
@@ -26,25 +26,25 @@ const isCharAVowel = (character) => {
         return false
     }
 }
-console.log('Excercise 3 result', isCharAVowel('a'))
+console.log('Exercise 3 result', isCharAVowel('a'))
 
-// Excercise 4: generateEmail()
+// Exercise 4: generateEmail()
 const generateEmail =(userName,domain) => {
     let firstHalf = userName
     let secondHalf = domain
     return `${firstHalf}@${secondHalf}`
 }
-console.log('Excercise 4 result:', generateEmail('johnsmith','example.com'))
+console.log('Exercise 4 result:', generateEmail('johnsmith','example.com'))
 
-// Excercise 5 greetUser()
+// Exercise 5 greetUser()
 const greetUser = (userName,timeOfDay) => {
     let inputName = userName
     let whatTimeIsIt = timeOfDay
     return `Good ${timeOfDay}, ${inputName}!`
 }
-console.log('Excercise 5 result:', greetUser('Sam','morning'))
+console.log('Exercise 5 result:', greetUser('Sam','morning'))
 
-// Excercise 6 maxOfThree()
+// Exercise 6 maxOfThree()
 const maxOfThree = (x,y,z) => {
     if( x>=y && x>=z) {
         return x
@@ -54,17 +54,17 @@ const maxOfThree = (x,y,z) => {
         return z
     }
 }
-console.log('Excercise 6 result:',maxOfThree(5,10,8))
+console.log('Exercise 6 result:',maxOfThree(5,10,8))
 
-// Excercise 7 calculateTip()
+// Exercise 7 calculateTip()
 const calculateTip = (billAmount, tipPercentage) => {
     let wholeBill = billAmount
     let myTip = wholeBill * (tipPercentage/100)
     return myTip
 }
-console.log('Excercise 7 result:', calculateTip(50,20))
+console.log('Exercise 7 result:', calculateTip(50,20))
 
-// Excercise 8 convertTemperature
+// Exercise 8 convertTemperature
 const convertTemperature = (temperature, scale) => {
     if (scale === 'C'){
         return temperature * (9/5) + 32     
@@ -72,9 +72,9 @@ const convertTemperature = (temperature, scale) => {
         return (temperature - 32) * (5/9)
     }
 }
-console.log('Excercise 8 result:', convertTemperature(32,'C'))
+console.log('Exercise 8 result:', convertTemperature(32,'C'))
 
-// Excercise 9 basicCalculator()
+// Exercise 9 basicCalculator()
 const basicCalculator = (num1,num2,operation) =>{
     if (operation ==='add'){
         return num1 + num2
@@ -86,4 +86,20 @@ const basicCalculator = (num1,num2,operation) =>{
         return num1 / num2
     }
 }
-console.log('Excercise 9 result:', basicCalculator(10,5,'subtract'))
+console.log('Exercise 9 result:', basicCalculator(10,5,'subtract'))
+
+//Exercise 10
+const calculateGrade = (myGrade) => {
+    if (myGrade >= 90) {
+        return 'A'
+    } else if (myGrade >= 80 && myGrade <= 89) {
+        return 'B'
+    } else if (myGrade >= 70 && myGrade <= 79) {
+        return 'C'
+    } else if (myGrade >= 60 && myGrade <= 69) {
+        return 'D'
+    } else {
+        return 'F'
+    }
+}
+console.log('Exercise 10 Result:',calculateGrade(100))
